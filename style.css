@@ -7,8 +7,8 @@
   --default: #4c4c4c;
   --font: Outfit, sans-serif;
   --radius: 30px;
-  --marquee-duration: 80s;
-  --marquee-gap: 40px;
+  --moving-duration: 80s;
+  --moving-gap: 40px;
 }
 
 * {
@@ -231,15 +231,6 @@ li {
   display: inline-block;
   white-space: nowrap;
   animation: move-content 15s linear infinite;
-}
-
-@keyframes move-content {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
 }
 
 /* what i do */
@@ -493,9 +484,9 @@ li {
   gap: 40px;
 }
 
-/* marquee  */
+/* moving  */
 
-.marquee-container {
+.moving-container {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -507,33 +498,33 @@ li {
   border-radius: 24px 0;
 }
 
-.marquee-strip {
+.moving-strip {
   height: fit-content;
   background: white;
-  transform: rotate(-2deg) translateY(-330%);
+  transform: rotate(-2deg) translateY(-30%);
 }
 
-.marquee-content {
+.moving-content {
   display: flex;
-  gap: var(--marquee-gap);
-  animation: marquee-horizontal var(--marquee-duration) linear infinite;
+  gap: var(--moving-gap);
+  animation: moving-horizontal 80s linear infinite;
   background: white;
 }
 
-.marquee-container[data-vertical="true"] .marquee-content {
+.moving-container[data-vertical="true"] .moving-content {
   flex-direction: column;
-  animation: marquee-vertical var(--marquee-duration) linear infinite;
+  animation: moving-vertical 80s linear infinite;
 }
 
-.marquee-container[data-reverse="true"] .marquee-content {
+.moving-container[data-reverse="true"] .moving-content {
   animation-direction: reverse;
 }
 
-.marquee-container[data-pause-on-hover="true"]:hover .marquee-content {
+.moving-container[data-pause-on-hover="true"]:hover .moving-content {
   animation-play-state: paused;
 }
 
-@keyframes marquee-horizontal {
+@keyframes moving-horizontal {
   from {
     transform: translateX(0);
   }
@@ -542,7 +533,7 @@ li {
   }
 }
 
-@keyframes marquee-vertical {
+@keyframes moving-vertical {
   from {
     transform: translateY(0);
   }
@@ -551,20 +542,20 @@ li {
   }
 }
 
-.marquee-item {
+.moving-item {
   display: flex;
   align-items: center;
   gap: 16px;
   white-space: nowrap;
 }
 
-.marquee-item span {
+.moving-item span {
   font-size: 40px;
   font-weight: 300;
   display: inline-block;
   margin: 0 16px;
 }
 
-.marquee-container[data-vertical="true"] .marquee-mask {
+.moving-container[data-vertical="true"] .moving-mask {
   background: linear-gradient(to bottom, white 5%, transparent 50%, white 95%);
 }

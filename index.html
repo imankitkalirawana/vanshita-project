@@ -124,15 +124,15 @@
     </div>
     <!-- moving strip -->
     <div
-      class="marquee-container"
+      class="moving-container"
       data-vertical="false"
       data-reverse="false"
       data-pause-on-hover="true"
     >
-      <div class="marquee-mask"></div>
-      <div class="marquee-strip">
-        <div class="marquee-content">
-          <div class="marquee-item">
+      <div class="moving-mask"></div>
+      <div class="moving-strip">
+        <div class="moving-content">
+          <div class="moving-item">
             <span>UX Design</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@
               />
             </svg>
           </div>
-          <div class="marquee-item">
+          <div class="moving-item">
             <span>App Design</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +162,7 @@
               />
             </svg>
           </div>
-          <div class="marquee-item">
+          <div class="moving-item">
             <span>Branding</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@
               />
             </svg>
           </div>
-          <div class="marquee-item">
+          <div class="moving-item">
             <span>Logo Design</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +192,7 @@
               />
             </svg>
           </div>
-          <div class="marquee-item">
+          <div class="moving-item">
             <span>User Research</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@
               />
             </svg>
           </div>
-          <div class="marquee-item">
+          <div class="moving-item">
             <span>UX Design</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@
               />
             </svg>
           </div>
-          <div class="marquee-item">
+          <div class="moving-item">
             <span>App Design</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -525,8 +525,8 @@
       });
     });
 
-    document.querySelectorAll(".marquee-container").forEach((container) => {
-      const content = container.querySelector(".marquee-content");
+    document.querySelectorAll(".moving-container").forEach((container) => {
+      const content = container.querySelector(".moving-content");
       const repeatCount = 5; // Number of times to repeat the content
 
       // duplicate the icons
