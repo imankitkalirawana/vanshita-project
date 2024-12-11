@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Vanshita</title>
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="contact">
+    <div class="cursor">
+      <svg
+        class="cursor-arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="33"
+        viewBox="0 0 28 33"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M23.8768 15.6661L2.78027 3.19995L7.60175 28.2717L12.6505 17.4188L23.8768 15.6661Z"
+          fill="#FFC700"
+          stroke="black"
+          stroke-width="2.8"
+          stroke-linecap="square"
+        />
+      </svg>
+      <span class="cursor-follower">vanshita</span>
+    </div>
+    <!-- header -->
+    <div class="navbar">
+      <a class="navbar-item" href="/">Home</a>
+      <a class="navbar-item project" href="#projects">Projects</a>
+      <a class="navbar-item" href="#services">Services</a>
+      <a class="navbar-item" href="#resume">Resume</a>
+      <a class="navbar-item active" href="/contact.html">Contact</a>
+    </div>
+    <!-- Form Wrapper -->
+    <div class="form-wrapper">
+      <div class="form-wrapper-left">
+        <div class="ellipse-group">
+          <img src="/images/contact/ellipse-group.png" />
+        </div>
+      </div>
+      <div class="form-wrapper-right">
+        <div class="radial"></div>
+        <div class="form-header">
+          <h2>Contact me</h2>
+        </div>
+        <form class="form" id="contact-form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+          <div class="form-group col-span-2">
+            <label for="email">Email</label>
+            <input type="name" id="email" name="email" />
+          </div>
+          <div class="form-group col-span-2">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+          <div class="form-group col-span-2">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" name="message"></textarea>
+          </div>
+          <div class="col-span-2 flex justify-end">
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </div>
+        </form>
+        <div id="success-message" style="display: none" class="modal-wrapper">
+          <div class="modal">
+            <img src="/images/contact/success-popup.png" />
+            <button id="done-button" class="modal-button btn">Done</button>
+          </div>
+        </div>
+      </div>
+      <div class="avatar-img">
+        <img src="/images/contact/avatar.png" />
+      </div>
+      <!-- moving strip -->
+      <div class="moving-strip-container">
+        <div class="moving-strip">
+          <span>UX Design</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+          >
+            <path
+              d="M16.3832 0.783373L21.6154 12.8665L34.1086 17.0257L22.0254 22.2578L17.8663 34.751L12.6341 22.6679L0.140944 18.5087L12.2241 13.2765L16.3832 0.783373Z"
+              fill="#FD853A"
+            />
+          </svg>
+          <span>App Design</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+          >
+            <path
+              d="M16.3832 0.783373L21.6154 12.8665L34.1086 17.0257L22.0254 22.2578L17.8663 34.751L12.6341 22.6679L0.140944 18.5087L12.2241 13.2765L16.3832 0.783373Z"
+              fill="#FD853A"
+            />
+          </svg>
+          <span>Branding</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+          >
+            <path
+              d="M16.3832 0.783373L21.6154 12.8665L34.1086 17.0257L22.0254 22.2578L17.8663 34.751L12.6341 22.6679L0.140944 18.5087L12.2241 13.2765L16.3832 0.783373Z"
+              fill="#FD853A"
+            />
+          </svg>
+          <span>logo Design</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+          >
+            <path
+              d="M16.3832 0.783373L21.6154 12.8665L34.1086 17.0257L22.0254 22.2578L17.8663 34.751L12.6341 22.6679L0.140944 18.5087L12.2241 13.2765L16.3832 0.783373Z"
+              fill="#FD853A"
+            />
+          </svg>
+          <span>User Research</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+          >
+            <path
+              d="M16.3832 0.783373L21.6154 12.8665L34.1086 17.0257L22.0254 22.2578L17.8663 34.751L12.6341 22.6679L0.140944 18.5087L12.2241 13.2765L16.3832 0.783373Z"
+              fill="#FD853A"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Footer -->
+    <div class="footer-container" id="contact">
+      <div class="footer">
+        <div class="copyright flex justify-between items-center">
+          <p>2024 © — Made by vanshitakarda111@gmail.com</p>
+          <div class="flex social-media">
+            <a href="#">Dribbble</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      const $cursor = $(".cursor");
+
+      $(document).on("mousemove", function (e) {
+        // Update the cursor position
+        $cursor.css({
+          top: e.clientY + "px",
+          left: e.clientX + "px",
+        });
+      });
+
+      $(document).on("mouseleave", function () {
+        // Hide cursor when leaving the window
+        $cursor.hide();
+      });
+
+      $(document).on("mouseenter", function () {
+        // Show cursor when entering the window
+        $cursor.show();
+      });
+    });
+  </script>
+</html>
